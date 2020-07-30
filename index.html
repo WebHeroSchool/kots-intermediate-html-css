@@ -2,109 +2,112 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <link href="style.css" type="text/css" rel="stylesheet">
-  <meta name="viewport" content="initial-scale=1.0, width=device-width">
+  <link rel="stylesheet" type="text/css" href="./style.css">
   <link rel="stylesheet" type="text/css" href="./fonts.css">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
   <title>LOCO</title>
 </head>
 <body>
-  <header  class="header">
-    <h1 class="header__title">
-      LOCO
-    </h1>
-    <nav class="header__nav">
-      <input id="header__nav-toggle" type="checkbox" />
-      <label class="header__nav-btn" for="header__nav-toggle">
-        <span></span>
-      </label>
-      <div class="header__nav-box">
-        <a class="header__nav-item" href="#"></a>
-      </div>
-    </nav>
-  </header>
-
   <main>
     <section class="main-page">
       <div class="main-page__side-panel">
-        <select class="main-page__selector" name="languages">
-          <option class="main-page__option" value="RU">RU</option>
-        </select>
+        <nav class="header__nav">
+          <header  class="header">
+            <h1 class="header__title">
+              LOCO
+            </h1>
+          </header>
+          <select class="main-page__selector" name="languages">
+            <option class="main-page__option" value="RU">RU</option>
+          </select>
+          <div class="header__nav-burger">
+            <div class="header__nav-box">
+              <span class="header__nav-item"></span>
+              <span class="header__nav-item"></span>
+            </div>
+          </div>
+        </nav>
         <address class="main-page__icons">
           <img src="img/INST.png" alt="INSTA" class="main-page__icon">
           <img src="img/VK.png" alt="VK" class="main-page__icon">
           <img src="img/FB.png" alt="FB" class="main-page__icon">
         </address>
       </div>
-      <img src="img/pete-bellis-432867-unsplash.png" alt="Девушка с рюкзаком" class="main-page__main-img">
+      <img  src="img/pete-bellis-432867-unsplash.png" alt="Девушка с рюкзаком" class="main-page__main-img_small">
+      <img  src="img/pete-bellis-432867-unsplash-full.png" alt="Девушка с рюкзаком" class="main-page__main-img_large">
       <div class="main-page__main-block">
         <h1 class="main-page__main-title">Новая коллекция</h1>
-        <div class="main-page__sub-block">
+        <div class="main-page__subblock">
           <article class="page__text">
             Бесплатная доставка включена. Предложение действует на сайте loco.com и
-            в магазинах до 18.09.2020. Для получения скидки в магазинах предъявите
+            в магазинах до 18.09.2018. Для получения скидки в магазинах предъявите
             скриншот данного предложения. В магазинах предложение не суммируется с
             другими акциями, предложениями и распродажей.
           </article>
           <button type="button" name="button" class="page__btn main-page__btn_read-more">
             Читать дальше</button>
-            <a href="#" class="main-page__other-offers">
-              Другие предложения &xrarr;</a>
-            </div>
-            <button type="button" name="scroll" class="main-page__btn_scroll">
-            </button>
+            <a class="main-page__other-offers">Другие предложения
+              <div class="main-page__arrows">
+                <div></div>
+              </div>
+            </a>
           </div>
-        </section>
+        </div>
+        <button type="button" name="scroll" class="main-page__btn-scroll main-page__btn-scroll_outer">
+          <span class="main-page__btn-scroll_inner"></span>
+        </button>
+      </section>
 
-        <section class="clutch-page">
-          <img src="img/10511040_001_22.png" alt="Задняя сумка" class="clutch-page__image clutch-page__img_back">
-          <img src="img/10511040_001_21.png" alt="Передняя сумка" class="clutch-page__image clutch-page__img_front">
-          <div class="clutch-page__main-block">
-            <h1 class="page__title">Кожаный клатч</h1>
-            <h3 class="page__subtitle">Осенняя коллекция</h3>
-            <article class="page__text page__text_half-opacity">
-              Бесплатная доставка включена. Предложение действует на сайте loco.com и
-              в магазинах до 18.09.2020. Для получения скидки в магазинах предъявите
-              скриншот данного предложения. В магазинах предложение не суммируется с
-              другими акциями, предложениями и распродажей.
-            </article>
-            <div class="page__circle page__circle_grey"></div>
-            <div class="page__circle page__circle_pink"></div>
-            <div class="page__circle page__circle_blue"></div>
-            <div class="page__circle page__circle_green"></div>
-            <h3 class="clutch-page__cost">1990₽</h3>
-            <div class="page__btn page__btn_quantity">
-              <button type="button" name="button" class="page__btn_minus">-</button>
-              <input class="page__quantity_sum" type="text" value="1">
-              <button type="button" name="button" class="page__btn_plus">+</button>
-            </div>
-            <button type="button" name="button" class="page__btn page__btn_add">Добавить в корзину</button>
+      <section class="clutch-page">
+        <img src="img/10511040_001_22.png" alt="Задняя сумка" class="clutch-page__image clutch-page__img_back">
+        <img src="img/10511040_001_21.png" alt="Передняя сумка" class="clutch-page__image clutch-page__img_front">
+        <div class="clutch-page__main-block">
+          <h1 class="page__title">Кожаный клатч</h1>
+          <h3 class="page__subtitle">Осенняя коллекция</h3>
+          <article class="page__text page__text_half-opacity">
+            Бесплатная доставка включена. Предложение действует на сайте loco.com и
+            в магазинах до 18.09.2018. Для получения скидки в магазинах предъявите
+            скриншот данного предложения. В магазинах предложение не суммируется с
+            другими акциями, предложениями и распродажей.
+          </article>
+          <div class="page__circle page__circle_grey"></div>
+          <div class="page__circle page__circle_pink"></div>
+          <div class="page__circle page__circle_blue"></div>
+          <div class="page__circle page__circle_green"></div>
+          <h3 class="clutch-page__cost">1990₽</h3>
+          <div class="page__btn page__btn_quantity">
+            <button type="button" name="button" class="page__btn_minus">-</button>
+            <input class="page__quantity_sum" type="text" value="1">
+            <button type="button" name="button" class="page__btn_plus">+</button>
           </div>
-          <a href="#" class="clutch-page__other-offers">Другие товары на LOCO.COM &xrarr;</a>
-        </section>
+          <button type="button" name="button" class="page__btn page__btn_add">Добавить в корзину</button>
+        </div>
+        <a href="#" class="clutch-page__other-offers">Другие товары на LOCO.COM &xrarr;</a>
+      </section>
 
-        <section class="clothes-page">
-          <div class="clothes-page__rectangle"></div>
-          <img src="img/photo-1516762689617-e1cffcef479d.png" alt="Одежда" class="clothes-page__img">
-          <div class="clothes-page__main-block">
-            <h1 class="page__title">Serene Total Look</h1>
-            <h3 class="page__subtitle">Осенняя коллекция</h3>
-            <article class="page_text page__text_half-opacity">
-              Джинсы, свитер, обувь.<br>
-              В комплект также входит пакет ароматного чая и кружка.
-            </article>
-            <div class="page__btn page__btn_quantity">
-              <button type="button" name="button" class="page__btn_minus">-</button>
-              <input class="page__quantity_sum" type="text" value="1">
-              <button type="button" name="button" class="page__btn_plus">+</button>
-            </div>
-            <button type="button" name="button" class="page__btn page__btn_add">Добавить в корзину</button>
+      <section class="clothes-page">
+        <div class="clothes-page__rectangle"></div>
+        <img src="img/photo-1516762689617-e1cffcef479d.png" alt="Одежда" class="clothes-page__img">
+        <div class="clothes-page__main-block">
+          <h1 class="page__title">Serene Total Look</h1>
+          <h3 class="page__subtitle">Осенняя коллекция</h3>
+          <article class="page_text page__text_half-opacity">
+            Джинсы, свитер, обувь.<br>
+            В комплект также входит пакет ароматного чая и кружка.
+          </article>
+          <div class="page__btn page__btn_quantity">
+            <button type="button" name="button" class="page__btn_minus">-</button>
+            <input class="page__quantity_sum" type="text" value="1">
+            <button type="button" name="button" class="page__btn_plus">+</button>
           </div>
-          <a href="#" class="clothes-page__other-offers">Другие товары на LOCO.COM &xrarr;</a>
-        </section>
-      </main>
+          <button type="button" name="button" class="page__btn page__btn_add">Добавить в корзину</button>
+        </div>
+        <a href="#" class="clothes-page__other-offers">Другие товары на LOCO.COM &xrarr;</a>
+      </section>
+    </main>
 
-      <footer class="footer">
-        Разработано в WebHeroSchool
-      </footer>
-    </body>
-    </html>
+    <footer class="footer">
+      Разработано в WebHeroSchool
+    </footer>
+  </body>
+  </html>
