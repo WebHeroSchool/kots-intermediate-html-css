@@ -5,25 +5,35 @@ body {
 
 @media (max-width: 415px) {
 
-  .main-page {
-    height: 100%;
-    overflow-x: hidden;
-    position: absolute;
-    width: 100%;
+  main {
+    background-image: url("img/pete-bellis-432867-unsplash-full.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
   }
 
-  .header__nav {
-    background: #fff;
-    height: 69px;
+  .main-page {
+    height: calc(100vh - 70px);
+    overflow-x: hidden;
+    width: 100%;
   }
 
   .header {
     background-color: #fff;
+    height: 69px;
+    width: 100vw;
+  }
+
+  .header__nav {
+    background: #fff;
+    display: inline-block;
+    float: right;
   }
 
   .header__title {
-    position: absolute;
+    display: inline-block;
     left: 26px;
+    float: left;
     font-weight: 500;
     font-size: 30px;
     line-height: 69px;
@@ -37,10 +47,9 @@ body {
   }
 
   .header__nav-burger {
-    position: absolute;
     width: 70px;
     height: 69px;
-    left: calc(100% - 70px);
+    left: calc(100% - 69px);
     background: #EDEDED;
   }
 
@@ -59,29 +68,23 @@ body {
     margin-bottom: 5px;
   }
 
-  .main-page__main-img_large {
-    overflow-x: hidden;
-    position: absolute;
-    top: 15px;
-    height: 100%;
-    width: auto;
-    z-index: -1;
-  }
-
   .main-page__main-title {
-    position: absolute;
-    left: 7%;
-    top: 66%;
     font-size: 50px;
     line-height: 51px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-top: 53vh;
+    width: 85vw;
   }
 
   .main-page__btn-scroll {
     background: transparent;
-    position: absolute;
     width: 25px;
     height: 25px;
     left: 176px;
+    margin-left: 50%;
     top: 92%;
     border-width: 0 3px 3px 0;
     transform: rotate(45deg);
@@ -98,21 +101,29 @@ body {
   .main-page__side-panel {
     background-color: #000;
     height: 100vh;
+    position: absolute;
+    top: 0;
     width: 461px;
+    z-index: -1;
   }
 
   .header {
-    left: 52px;
-    position: absolute;
-    top: 36px;
+    height: 92px;
+    margin-bottom: 77px;
   }
 
   .header__title {
     color: #fff;
+    display: inline-block;
     font-size: 30px;
     font-weight: 500;
     letter-spacing: 0.07em;
-    margin: 0;
+    padding: 16px 52px;
+  }
+
+  .header__nav {
+    display: inline-block;
+    float: right;
   }
 
   .main-page__selector {
@@ -120,20 +131,17 @@ body {
     border: none;
     color: #fff;
     cursor: pointer;
+    float: right;
     font-family: 'Montserrat';
     font-size: 20px;
     font-weight: 500;
     height: 25px;
-    left: 384px;
-    position: absolute;
-    top: 42px;
+    margin: 43px 16px;
   }
 
   .header__nav-burger {
     background: #E5E5E5;
     height: 92px;
-    left: 1200px;
-    position: absolute;
     width: 92px;
   }
 
@@ -149,23 +157,31 @@ body {
   }
 
   .header__nav-item:first-of-type {
-    margin-bottom: 5px;
+    margin-bottom: 6px;
+  }
+
+  .main-page {
+    height: calc(100vh - 70px);
   }
 
   .main-page__icons {
-    left: 52px;
-    position: absolute;
-    top: 816px;
+    padding-left: 52px;
+    padding-top: 816px;
   }
 
   .main-page__icon {
     margin-right: 8px;
   }
 
+  .main-page__center-block {
+    margin-bottom: 145px;
+  }
+
   .main-page__main-img_small {
-    left: 185px;
-    position: absolute;
-    top: 169px;
+    display: inline-block;
+    margin-right: 43px;
+    padding-left: 11vw;
+    float: left;
   }
 
   .main-page__main-img_large {
@@ -173,22 +189,23 @@ body {
   }
 
   .main-page__main-block {
-    left: 786px;
-    position: absolute;
-    top: 270px;
+    display: inline-block;
+    padding: 9px;
+    padding-top: 102px;
   }
 
   .main-page__main-title {
     font-size: 80px;
     line-height: 82px;
-    margin: 0 0 19px 4px;
+    margin: 0 0 17px 4px;
+    width: 475px;
   }
 
   .page__text {
     font-size: 15px;
     line-height: 21px;
     margin-bottom: 39px;
-    margin-left: 4px;
+    margin-left: 3px;
     width: 467px;
   }
 
@@ -214,9 +231,9 @@ body {
     display: inline-block;
     font-weight: 500;
     font-size: 13px;
-    margin: 14px 0;
     text-decoration: none;
     text-transform: uppercase;
+    vertical-align: text-top;
   }
 
   .main-page__arrows {
@@ -258,10 +275,9 @@ body {
   .main-page__btn-scroll_outer {
     background-color: #fff;
     border-radius: 15px;
+    display: block;
+    margin-left: 50%;
     height: 46px;
-    left: 707px;
-    position: absolute;
-    top: 815px;
     width: 27px;
   }
 
@@ -276,8 +292,29 @@ body {
   }
 }
 
-@media (min-width: 1315px) {
-  .header__nav-burger {
-    left: calc(100% - 92px);
+@media (min-width: 416px) and (max-width: 1320px) {
+  .main-page__main-img_small {
+    width: calc(200px + 25vw);
+  }
+
+  .main-page__main-block {
+    padding-top: 7vw;
+    width: 30%;
+  }
+
+  .main-page__main-title {
+    font-size: 6vw;
+  }
+
+  .page__text {
+    width: 100%;
+  }
+
+  .main-page__other-offers {
+    padding: 20px;
+  }
+
+  .main-page__center-block {
+    margin-bottom: 6vw;
   }
 }

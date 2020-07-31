@@ -8,49 +8,52 @@
   <title>LOCO</title>
 </head>
 <body>
-  <main>
+
+<main>
+  <header class="header">
+    <h1 class="header__title">
+      LOCO
+    </h1>
+    <nav class="header__nav">
+      <div class="header__nav-burger">
+        <div class="header__nav-box">
+          <span class="header__nav-item"></span>
+          <span class="header__nav-item"></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
     <section class="main-page">
       <div class="main-page__side-panel">
-        <nav class="header__nav">
-          <header  class="header">
-            <h1 class="header__title">
-              LOCO
-            </h1>
-          </header>
-          <select class="main-page__selector" name="languages">
-            <option class="main-page__option" value="RU">RU</option>
-          </select>
-          <div class="header__nav-burger">
-            <div class="header__nav-box">
-              <span class="header__nav-item"></span>
-              <span class="header__nav-item"></span>
-            </div>
-          </div>
-        </nav>
+        <select class="main-page__selector" name="languages">
+          <option class="main-page__option" value="RU">RU</option>
+        </select>
         <address class="main-page__icons">
           <img src="img/INST.png" alt="INSTA" class="main-page__icon">
           <img src="img/VK.png" alt="VK" class="main-page__icon">
           <img src="img/FB.png" alt="FB" class="main-page__icon">
         </address>
       </div>
-      <img  src="img/pete-bellis-432867-unsplash.png" alt="Девушка с рюкзаком" class="main-page__main-img_small">
-      <img  src="img/pete-bellis-432867-unsplash-full.png" alt="Девушка с рюкзаком" class="main-page__main-img_large">
-      <div class="main-page__main-block">
-        <h1 class="main-page__main-title">Новая коллекция</h1>
-        <div class="main-page__subblock">
-          <article class="page__text">
-            Бесплатная доставка включена. Предложение действует на сайте loco.com и
-            в магазинах до 18.09.2018. Для получения скидки в магазинах предъявите
-            скриншот данного предложения. В магазинах предложение не суммируется с
-            другими акциями, предложениями и распродажей.
-          </article>
-          <button type="button" name="button" class="page__btn main-page__btn_read-more">
-            Читать дальше</button>
-            <a class="main-page__other-offers">Другие предложения
-              <div class="main-page__arrows">
-                <div></div>
-              </div>
-            </a>
+      <div class="main-page__center-block">
+        <img src="img/pete-bellis-432867-unsplash.png" alt="Девушка с рюкзаком" class="main-page__main-img_small">
+        <div class="main-page__main-block">
+          <h1 class="main-page__main-title">Новая коллекция</h1>
+          <div class="main-page__subblock">
+            <article class="page__text">
+              Бесплатная доставка включена. Предложение действует на сайте loco.com и
+              в магазинах до 18.09.2018. Для получения скидки в магазинах предъявите
+              скриншот данного предложения. В магазинах предложение не суммируется с
+              другими акциями, предложениями и распродажей.
+            </article>
+            <button type="button" name="button" class="page__btn main-page__btn_read-more">
+              Читать дальше</button>
+              <a class="main-page__other-offers">Другие предложения
+                <div class="main-page__arrows">
+                  <div></div>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
         <button type="button" name="scroll" class="main-page__btn-scroll main-page__btn-scroll_outer">
