@@ -32,7 +32,7 @@ body {
 
   .header__title {
     display: inline-block;
-    left: 26px;
+    padding-left: 26px;
     float: left;
     font-weight: 500;
     font-size: 30px;
@@ -71,11 +71,10 @@ body {
   .main-page__main-title {
     font-size: 50px;
     line-height: 51px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 30px;
-    padding-top: 53vh;
+    padding-top: 54vh;
     width: 85vw;
   }
 
@@ -83,9 +82,7 @@ body {
     background: transparent;
     width: 25px;
     height: 25px;
-    left: 176px;
     margin-left: 50%;
-    top: 92%;
     border-width: 0 3px 3px 0;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
@@ -304,6 +301,8 @@ body {
 
   .main-page__main-title {
     font-size: 6vw;
+    line-height: normal;
+    width: auto;
   }
 
   .page__text {
