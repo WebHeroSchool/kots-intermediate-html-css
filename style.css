@@ -4,7 +4,7 @@ body {
 }
 
 @media (max-width: 415px) {
-
+  /*ГЛАВНАЯ СТРАНИЦА*/
   main {
     background-image: url("img/pete-bellis-432867-unsplash-full.png");
     background-repeat: no-repeat;
@@ -88,13 +88,228 @@ body {
     -webkit-transform: rotate(45deg);
   }
 
-  .clutch-page, .clothes-page, footer {
+  .page__btn_quantity, .clutch-page__img_back, .clutch-page__other-offers,
+  footer {
     display: none;
+  }
+
+  /*СТРАНИЦА С КЛАТЧЕМ*/
+  .clutch-page {
+    width: 100vw;
+    height: 100vh;
+    background: #FAE8E4;
+  }
+
+  .clutch-page__img_front {
+    margin: auto 20vw;
+    margin-top: -54px;
+    width: 60vw;
+  }
+
+  .clutch-page__center-block {
+    background-color: #fff;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    display: inline-block;
+    margin: auto 7.5vw;
+    max-width: 85vw;
+  }
+
+  .clutch-page__main-block {
+    margin: auto 10%;
+  }
+
+  .page__title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: auto;
+  }
+
+  .clutch-page__subtitle {
+    color: #000;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 10px;
+    letter-spacing: 0.07em;
+    margin-bottom: 20px;
+    opacity: 0.5;
+    text-transform: uppercase;
+  }
+
+  .page__text_half-opacity {
+    color: #000;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 9px;
+    line-height: 13px;
+    margin-bottom: 12px;
+    opacity: 0.5;
+  }
+
+  .clutch-page__circles-and-cost {
+    margin-bottom: 25px;
+    position: relative;
+  }
+
+  .page__circle {
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    height: 23px;
+    margin-right: 6px;
+    width: 23px;
+  }
+
+  .page__circle_grey {
+    background-color: #DEDEDE;
+  }
+
+  .page__circle_pink {
+    background-color: #F29F9F;
+  }
+
+  .page__circle_blue {
+    background-color: #A8BFF9;
+  }
+
+  .page__circle_green {
+    background-color: #90BD8F;
+  }
+
+  .clutch-page__cost {
+    display: inline-block;
+    margin: auto;
+    position: absolute;
+    right: 0;
+  }
+
+  .page__btn {
+    background: transparent;
+    border: 1.5px solid #000;
+    box-sizing: border-box;
+    height: 36px;
+  }
+
+  .page__btn_add {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 0px;
+    margin-bottom: 30px;
+    padding: 0 10%;
+    text-transform: uppercase;
+    width: -webkit-fill-available;
+  }
+
+  /*СТРАНИЦА С ОДЕЖДОЙ*/
+  .clothes-page {
+    width: 100vw;
+    height: 100vh;
+    background: #EBE3D8;
+  }
+
+  .clothes-page__rectangle {
+    background-color: #000;
+    display: inline-block;
+    height: 100vh;
+    margin-left: 102px;
+    width: 41px;
+  }
+
+  .clothes-page__img {
+    margin-left: -34vw;
+    margin-top: 6vh;
+    position: absolute;
+    width: 92vw;
+  }
+
+  .clothes-page__center-block {
+    display: inline-block;
+    position: absolute;
+  }
+
+  .clothes-page__main-block {
+    background-color: #FAE8E4;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    margin-left: -99px;
+    margin-top: 45vh;
+    padding: 28px 24px 0 24px;
+    width: 70vw;
+    z-index: 2;
+  }
+
+  .clothes-page__subtitle {
+    color: #000;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 10px;
+    letter-spacing: 0.07em;
+    margin-bottom: 20px;
+    opacity: 0.5;
+    text-transform: uppercase;
+  }
+
+  .clothes-page__other-offers {
+    color: #000;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    width: 140px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .page__other-offers-block {
+    margin: 37px 45px;
+  }
+
+  .page__arrows {
+    margin-top: 10px;
+  }
+
+  .page__arrows div {
+    background-color: #000;
+    bottom: 4px;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 136px;
+  }
+
+  .page__arrows div::after {
+    background-color: #000;
+    content: '';
+    height: 1px;
+    position: absolute;
+    right: 0;
+    top: -3px;
+    transform: rotate(45deg);
+    width: 7px;
+  }
+
+  .page__arrows div::before {
+    background-color: #000;
+    content: '';
+    height: 1px;
+    position: absolute;
+    right: 0;
+    top: 3px;
+    transform: rotate(-45deg);
+    width: 7px;
   }
 }
 
 @media (min-width: 416px) {
-
+  /*ГЛАВНАЯ СТРАНИЦА*/
   .main-page__side-panel {
     background-color: #000;
     height: 100vh;
@@ -158,7 +373,7 @@ body {
   }
 
   .main-page {
-    height: calc(100vh - 70px);
+    height: calc(100vh - (92px + 77px));
   }
 
   .main-page__icons {
@@ -207,7 +422,7 @@ body {
   }
 
   .page__btn {
-    background-color: #fff;
+    background: transparent;
     border: 1.5px solid #000;
     box-sizing: border-box;
     height: 44px;
@@ -223,7 +438,8 @@ body {
     width: 203px;
   }
 
-  .main-page__other-offers {
+  .page__other-offers {
+    color: #000;
     cursor: pointer;
     display: inline-block;
     font-weight: 500;
@@ -233,12 +449,12 @@ body {
     vertical-align: text-top;
   }
 
-  .main-page__arrows {
+  .page__arrows {
     display: inline-block;
     padding-left: 16px;
   }
 
-  .main-page__arrows div {
+  .page__arrows div {
     background-color: #000;
     bottom: 4px;
     display: block;
@@ -247,7 +463,7 @@ body {
     width: 45px;
   }
 
-  .main-page__arrows div::after {
+  .page__arrows div::after {
     background-color: #000;
     content: '';
     height: 1px;
@@ -258,7 +474,7 @@ body {
     width: 7px;
   }
 
-  .main-page__arrows div::before {
+  .page__arrows div::before {
     background-color: #000;
     content: '';
     height: 1px;
@@ -287,9 +503,244 @@ body {
     position: relative;
     width: 2.45px;
   }
+
+  /*СТРАНИЦА С КЛАТЧЕМ*/
+  .clutch-page {
+    background: #FAE8E4;
+    height: 100vh;
+  }
+
+  .clutch-page__images {
+    display: inline-block;
+    float: left;
+    margin-right: 66px;
+    position: relative;
+  }
+
+  .clutch-page__img {
+    display: inline-block;
+    float: left;
+  }
+
+  .clutch-page__img_back {
+    padding-left: 137px;
+    padding-top: 217px;
+    position: absolute;
+  }
+
+  .clutch-page__img_front {
+    padding-left: 231px;
+    padding-top: 28px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .clutch-page__center-block {
+    display: flow-root;
+  }
+
+  .clutch-page__main-block {
+    background-color: #fff;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    display: inline-block;
+    max-width: 488px;
+    margin-bottom: 39px;
+    margin-top: 166px;
+    padding: 15px 65px 15px 52px;
+  }
+
+  .page__title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 41px;
+    margin-bottom: auto;
+  }
+
+  .page__subtitle {
+    color: #888;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+  }
+
+  .clutch-page__subtitle {
+    margin-bottom: 60px;
+  }
+
+  .page__text_half-opacity {
+    color: #888;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: normal;
+    max-width: 368px;
+  }
+
+  .page__circle {
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    height: 30px;
+    margin-right: 12px;
+    width: 30px;
+  }
+
+  .page__circle_grey {
+    background-color: #DEDEDE;
+  }
+
+  .page__circle_pink {
+    background-color: #F29F9F;
+  }
+
+  .page__circle_blue {
+    background-color: #A8BFF9;
+  }
+
+  .page__circle_green {
+    background-color: #90BD8F;
+    margin-right: 63px;
+  }
+
+  .clutch-page__cost {
+    display: inline-block;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 56px;
+    margin: auto;
+    margin-bottom: 52px;
+  }
+
+  .page__btn_quantity {
+    display: inline-block;
+    margin-right: 15px;
+    padding: 10px;
+    width: 100px;
+  }
+
+  .page__btn_minus, .page__btn_plus {
+    background: transparent;
+    border: none;
+    display: inline-block;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+  .page__quantity_sum {
+    background: transparent;
+    border: none;
+    text-align: center;
+    width: 25px;
+  }
+
+  .page__btn_add {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 0px;
+    margin-bottom: 44px;
+    padding: 0 10%;
+    text-transform: uppercase;
+  }
+
+  .clutch-page__other-offers {
+    color: black;
+    display: inline-block;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .clutch-page__arrows div {
+    width: 241px;
+  }
+
+  /*СТРАНИЦА С ОДЕЖДОЙ*/
+  .clothes-page {
+    background: #EBE3D8;
+    height: 100vh;
+  }
+
+  .clothes-page__rectangle {
+    background-color: #000;
+    display: block;
+    float: left;
+    height: 100vh;
+    margin-left: 388px;
+    width: 73px;
+    z-index: 1;
+  }
+
+  .clothes-page__img {
+    float: left;
+    margin-left: -375px;
+    margin-top: 140px;
+    width: 825px;
+    z-index: 1;
+  }
+
+  .clothes-page__main-block {
+    background: #FAE8E4;
+    display: inline-block;
+    margin-bottom: 40px;
+    margin-left: -95px;
+    margin-top: 230px;
+    padding: 34px 53px 0 47px;
+    z-index: 2;
+  }
+
+  .clothes-page__subtitle {
+    margin-bottom: 35px;
+  }
+
+  .clothes-page__other-offers {
+    padding-left: 30px;
+  }
+
+  .clothes-page__arrows div {
+    width: 108px;
+  }
+
+  .footer {
+    display: block;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    padding-top: 20vh;
+    position: absolute;
+    right: 40px;
+    width: fit-content;
+  }
+
+  .footer__webhero_yellow {
+    color: yellow;
+    text-align: right;
+  }
+
+  .footer__school_regular {
+    display: block;
+    font-weight: 500;
+    text-align: right;
+  }
 }
 
-@media (min-width: 416px) and (max-width: 1320px) {
+@media (min-width: 416px) and (max-width: 1400px) {
+  /*ГЛАВНАЯ СТРАНИЦА*/
   .main-page__main-img_small {
     width: calc(200px + 25vw);
   }
@@ -300,7 +751,7 @@ body {
   }
 
   .main-page__main-title {
-    font-size: 6vw;
+    font-size: 5.5vw;
     line-height: normal;
     width: auto;
   }
@@ -315,5 +766,48 @@ body {
 
   .main-page__center-block {
     margin-bottom: 6vw;
+  }
+
+  /*СТРАНИЦА С КЛАТЧЕМ*/
+
+  .clutch-page__images {
+    margin-right: 4vw;
+  }
+
+  .clutch-page__img_back {
+    padding-left: 10vw;
+    width: 25vw;
+  }
+
+  .clutch-page__img_front {
+    padding-left: 15vw;
+    width: 40vw;
+  }
+
+  .clutch-page__main-block {
+    margin-top: 12vw;
+    width: 26.5vw;
+  }
+
+  .clutch-page__arrows div {
+    width: 15vw;
+  }
+
+  /*СТРАНИЦА С ОДЕЖДОЙ*/
+  .clothes-page__img {
+    width: 58vw;
+  }
+
+  .clothes-page__main-block {
+    margin-top: 12vw;
+    width: 26.5vw;
+  }
+
+  .clothes-page__other-offers {
+    width: 30vw;
+  }
+
+  .clothes-page__arrows div {
+    width: 5vw;
   }
 }
