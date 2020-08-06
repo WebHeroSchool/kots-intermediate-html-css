@@ -9,11 +9,11 @@ body {
     background-image: url("img/pete-bellis-432867-unsplash-full.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 596px;
   }
 
   .main-page {
-    height: calc(100vh - 70px);
+    height: calc(900px - 70px);
     overflow-x: hidden;
     width: 100%;
   }
@@ -96,7 +96,7 @@ body {
   /*СТРАНИЦА С КЛАТЧЕМ*/
   .clutch-page {
     width: 100vw;
-    height: 100vh;
+    height: 596px;
     background: #FAE8E4;
   }
 
@@ -124,7 +124,7 @@ body {
     font-weight: bold;
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: auto;
+    margin: auto;
   }
 
   .clutch-page__subtitle {
@@ -210,14 +210,14 @@ body {
   /*СТРАНИЦА С ОДЕЖДОЙ*/
   .clothes-page {
     width: 100vw;
-    height: 100vh;
+    height: 596px;
     background: #EBE3D8;
   }
 
   .clothes-page__rectangle {
     background-color: #000;
     display: inline-block;
-    height: 100vh;
+    height: 596px;
     margin-left: 102px;
     width: 41px;
   }
@@ -312,7 +312,7 @@ body {
   /*ГЛАВНАЯ СТРАНИЦА*/
   .main-page__side-panel {
     background-color: #000;
-    height: 100vh;
+    height: 900px;
     position: absolute;
     top: 0;
     width: 461px;
@@ -373,7 +373,7 @@ body {
   }
 
   .main-page {
-    height: calc(100vh - (92px + 77px));
+    height: calc(900px - (92px + 77px));
   }
 
   .main-page__icons {
@@ -392,7 +392,7 @@ body {
   .main-page__main-img_small {
     display: inline-block;
     margin-right: 43px;
-    padding-left: 11vw;
+    padding-left: 180px;
     float: left;
   }
 
@@ -417,7 +417,7 @@ body {
     font-size: 15px;
     line-height: 21px;
     margin-bottom: 39px;
-    margin-left: 3px;
+    padding-left: 3px;
     width: 467px;
   }
 
@@ -507,7 +507,7 @@ body {
   /*СТРАНИЦА С КЛАТЧЕМ*/
   .clutch-page {
     background: #FAE8E4;
-    height: 100vh;
+    height: 900px;
   }
 
   .clutch-page__images {
@@ -546,7 +546,7 @@ body {
     max-width: 488px;
     margin-bottom: 39px;
     margin-top: 166px;
-    padding: 15px 65px 15px 52px;
+    padding: 55px 65px 15px 52px;
   }
 
   .page__title {
@@ -555,7 +555,7 @@ body {
     font-weight: bold;
     font-size: 40px;
     line-height: 41px;
-    margin-bottom: auto;
+    margin: auto;
   }
 
   .page__subtitle {
@@ -671,14 +671,14 @@ body {
   /*СТРАНИЦА С ОДЕЖДОЙ*/
   .clothes-page {
     background: #EBE3D8;
-    height: 100vh;
+    height: 900px;
   }
 
   .clothes-page__rectangle {
     background-color: #000;
     display: block;
     float: left;
-    height: 100vh;
+    height: 900px;
     margin-left: 388px;
     width: 73px;
     z-index: 1;
@@ -714,7 +714,13 @@ body {
     width: 108px;
   }
 
+  .footer__container {
+    height: 250px;
+    position: relative;
+  }
+
   .footer {
+    bottom: 0;
     display: block;
     font-family: "Montserrat";
     font-style: normal;
@@ -736,78 +742,5 @@ body {
     display: block;
     font-weight: 500;
     text-align: right;
-  }
-}
-
-@media (min-width: 416px) and (max-width: 1400px) {
-  /*ГЛАВНАЯ СТРАНИЦА*/
-  .main-page__main-img_small {
-    width: calc(200px + 25vw);
-  }
-
-  .main-page__main-block {
-    padding-top: 7vw;
-    width: 30%;
-  }
-
-  .main-page__main-title {
-    font-size: 5.5vw;
-    line-height: normal;
-    width: auto;
-  }
-
-  .page__text {
-    width: 100%;
-  }
-
-  .main-page__other-offers {
-    padding: 20px;
-  }
-
-  .main-page__center-block {
-    margin-bottom: 6vw;
-  }
-
-  /*СТРАНИЦА С КЛАТЧЕМ*/
-
-  .clutch-page__images {
-    margin-right: 4vw;
-  }
-
-  .clutch-page__img_back {
-    padding-left: 10vw;
-    width: 25vw;
-  }
-
-  .clutch-page__img_front {
-    padding-left: 15vw;
-    width: 40vw;
-  }
-
-  .clutch-page__main-block {
-    margin-top: 12vw;
-    width: 26.5vw;
-  }
-
-  .clutch-page__arrows div {
-    width: 15vw;
-  }
-
-  /*СТРАНИЦА С ОДЕЖДОЙ*/
-  .clothes-page__img {
-    width: 58vw;
-  }
-
-  .clothes-page__main-block {
-    margin-top: 12vw;
-    width: 26.5vw;
-  }
-
-  .clothes-page__other-offers {
-    width: 30vw;
-  }
-
-  .clothes-page__arrows div {
-    width: 5vw;
   }
 }
