@@ -9,13 +9,14 @@ body {
     background-image: url("img/pete-bellis-432867-unsplash-full.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 596px;
+    height: 100vh;
+    width: 100vw;
   }
 
   .main-page {
-    height: calc(900px - 70px);
+    height: calc(100vh - 70px);
     overflow-x: hidden;
-    width: 100%;
+    width: 100vw;
   }
 
   .header {
@@ -49,7 +50,7 @@ body {
   .header__nav-burger {
     width: 70px;
     height: 69px;
-    left: calc(100% - 69px);
+    left: calc(100vh - 69px);
     background: #EDEDED;
   }
 
@@ -96,7 +97,7 @@ body {
   /*СТРАНИЦА С КЛАТЧЕМ*/
   .clutch-page {
     width: 100vw;
-    height: 596px;
+    height: 100vh;
     background: #FAE8E4;
   }
 
@@ -115,7 +116,7 @@ body {
   }
 
   .clutch-page__main-block {
-    margin: auto 10%;
+    padding: 28px 24px 0 24px;
   }
 
   .page__title {
@@ -210,14 +211,14 @@ body {
   /*СТРАНИЦА С ОДЕЖДОЙ*/
   .clothes-page {
     width: 100vw;
-    height: 596px;
+    height: 100vh;
     background: #EBE3D8;
   }
 
   .clothes-page__rectangle {
     background-color: #000;
     display: inline-block;
-    height: 596px;
+    height: 100vh;
     margin-left: 102px;
     width: 41px;
   }
@@ -236,7 +237,6 @@ body {
 
   .clothes-page__main-block {
     background-color: #FAE8E4;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
     margin-left: -99px;
     margin-top: 45vh;
     padding: 28px 24px 0 24px;
@@ -309,6 +309,11 @@ body {
 }
 
 @media (min-width: 416px) {
+
+  main {
+    width: 1440px;
+  }
+
   /*ГЛАВНАЯ СТРАНИЦА*/
   .main-page__side-panel {
     background-color: #000;
@@ -401,7 +406,7 @@ body {
   }
 
   .main-page__main-block {
-    display: inline-block;
+    display: flow-root;
     padding: 9px;
     padding-top: 102px;
   }
@@ -692,6 +697,10 @@ body {
     z-index: 1;
   }
 
+  .clothes-page__center-block {
+    display: flow-root;
+  }
+
   .clothes-page__main-block {
     background: #FAE8E4;
     display: inline-block;
@@ -720,14 +729,13 @@ body {
   }
 
   .footer {
-    bottom: 0;
+    bottom: 5px;
     display: block;
     font-family: "Montserrat";
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
-    padding-top: 20vh;
     position: absolute;
     right: 40px;
     width: fit-content;
