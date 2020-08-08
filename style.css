@@ -5,24 +5,19 @@ body {
 
 @media (max-width: 415px) {
   /*ГЛАВНАЯ СТРАНИЦА*/
-  main {
+
+  .main-page {
     background-image: url("img/pete-bellis-432867-unsplash-full.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
-    width: 100vw;
-  }
-
-  .main-page {
     height: calc(100vh - 70px);
     overflow-x: hidden;
-    width: 100vw;
+    width: 100%;
   }
 
   .header {
     background-color: #fff;
     height: 69px;
-    width: 100vw;
   }
 
   .header__nav {
@@ -76,7 +71,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding-top: 54vh;
-    width: 85vw;
+    width: 85%;
   }
 
   .main-page__btn-scroll {
@@ -96,23 +91,23 @@ body {
 
   /*СТРАНИЦА С КЛАТЧЕМ*/
   .clutch-page {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background: #FAE8E4;
   }
 
   .clutch-page__img_front {
-    margin: auto 20vw;
+    margin: auto 20%;
     margin-top: -54px;
-    width: 60vw;
+    width: 60%
   }
 
   .clutch-page__center-block {
     background-color: #fff;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
     display: inline-block;
-    margin: auto 7.5vw;
-    max-width: 85vw;
+    margin: auto 7.5%;
+    max-width: 85%;
   }
 
   .clutch-page__main-block {
@@ -201,7 +196,7 @@ body {
     font-style: normal;
     font-weight: 500;
     font-size: 13px;
-    line-height: 0px;
+    line-height: 14px;
     margin-bottom: 30px;
     padding: 0 10%;
     text-transform: uppercase;
@@ -210,7 +205,7 @@ body {
 
   /*СТРАНИЦА С ОДЕЖДОЙ*/
   .clothes-page {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background: #EBE3D8;
   }
@@ -224,10 +219,10 @@ body {
   }
 
   .clothes-page__img {
-    margin-left: -34vw;
+    margin-left: -34%;
     margin-top: 6vh;
     position: absolute;
-    width: 92vw;
+    width: 92%;
   }
 
   .clothes-page__center-block {
@@ -240,7 +235,7 @@ body {
     margin-left: -99px;
     margin-top: 70vw;
     padding: 28px 24px 0 24px;
-    width: 70vw;
+    width: 100%;
     z-index: 2;
   }
 
@@ -269,7 +264,7 @@ body {
   }
 
   .page__other-offers-block {
-    margin: 7vh 0 0 8vw;
+    margin: 7vh 0 0 8%;
   }
 
   .page__arrows {
@@ -283,7 +278,7 @@ body {
 
 @media (max-width: 321px) {
   .clothes-page__img {
-    margin-left: -40vw;
+    margin-left: -45%;
   }
 }
 
@@ -301,7 +296,6 @@ body {
   .header {
     height: 92px;
     margin-bottom: 77px;
-    width: 100vw;
   }
 
   .header__title {
@@ -354,7 +348,7 @@ body {
 
   .main-page {
     height: calc(900px - (92px + 77px));
-    width: 100vw;
+    width: 100%;
   }
 
   .main-page__icons {
@@ -377,8 +371,8 @@ body {
   .main-page__main-block {
     display: flow-root;
     padding: 9px;
-    padding-top: 5vw;
-    width: 35vw;
+    padding-top: 5%;
+    width: 35%;
   }
 
   .page__text {
@@ -400,9 +394,9 @@ body {
     font-family: 'Montserrat';
     font-size: 13px;
     font-weight: 500;
-    margin-right: 1vw;
+    margin-right: 1%;
     text-transform: uppercase;
-    width: 20vw;
+    width: 70%;
   }
 
   .page__other-offers {
@@ -450,7 +444,7 @@ body {
   .clutch-page {
     background: #FAE8E4;
     height: 900px;
-    width: 100vw;
+    width: 100%;
   }
 
   .clutch-page__img {
@@ -581,7 +575,7 @@ body {
   .clothes-page {
     background: #EBE3D8;
     height: 900px;
-    width: 100vw;
+    width: 100%;
   }
 
   .clothes-page__rectangle {
@@ -629,9 +623,9 @@ body {
   .main-page__main-img_small {
     display: inline-block;
     float: left;
-    margin-right: 3vw;
-    padding-left: 5vw;
-    width: calc(200px + 25vw);
+    margin-right: 3%;
+    padding-left: 5%;
+    width: calc(200px + 25%);
   }
 
   .main-page__main-title {
@@ -642,7 +636,7 @@ body {
   }
 
   .main-page__center-block {
-    margin-bottom: 6vw;
+    margin-bottom: 6%;
   }
 
   /*СТРАНИЦА С КЛАТЧЕМ*/
@@ -650,22 +644,22 @@ body {
   .clutch-page__images {
     display: inline-block;
     float: left;
-    margin-right: 4vw;
+    margin-right: 4%;
     position: relative;
   }
 
   .clutch-page__img_back {
-    padding-left: 10vw;
+    padding-left: 10%;
     padding-top: 217px;
     position: absolute;
-    width: 25vw;
+    width: 25%;
   }
 
   .clutch-page__img_front {
-    padding-left: 15vw;
+    padding-left: 15%;
     padding-top: 28px;
     position: relative;
-    width: 40vw;
+    width: 40%;
     z-index: 1;
   }
 
@@ -676,8 +670,8 @@ body {
     max-width: 488px;
     margin-bottom: 39px;
     padding: 55px 65px 15px 52px;
-    margin-top: 12vw;
-    width: 25vw;
+    margin-top: 12%;
+    width: 25%;
   }
 
   .clutch-page__arrows {
@@ -693,7 +687,7 @@ body {
     float: left;
     margin-left: -375px;
     margin-top: 140px;
-    width: 58vw;
+    width: 58%;
     z-index: 1;
   }
 
@@ -702,14 +696,14 @@ body {
     display: inline-block;
     margin-bottom: 40px;
     margin-left: -95px;
-    margin-top: 12vw;
+    margin-top: 30%;
     padding: 34px 53px 0 47px;
-    width: 26.5vw;
+    width: 26.5%;
     z-index: 2;
   }
 
   .clothes-page__other-offers {
-    width: 30vw;
+    width: 30%;
   }
 
   .clothes-page__arrows {
@@ -723,17 +717,17 @@ body {
 
 @media (max-width: 850px) {
   .main-page__side-panel {
-    width: calc(200px + 32vw);
+    width: calc(200px + 32%);
   }
 }
 
 @media (max-width: 680px) {
   .main-page__side-panel {
-    width: 60vw;
+    width: 60%;
   }
 
   .main-page__main-img_small {
-    width: 53vw;
+    width: 53%;
   }
 }
 
@@ -749,16 +743,16 @@ body {
   }
 
   .clutch-page__img_back {
-    padding-left: 10vw;
-    padding-top: 13vw;
+    padding-left: 10%;
+    padding-top: 12%;
     position: inherit;
-    width: 30vw;
+    width: 30%;
   }
 
   .clutch-page__img_front {
-    padding-left: 12vw;
+    padding-left: 12%;
     padding-top: 0;
-    width: 30vw;
+    width: 30%;
   }
 
   .clutch-page__center-block {
@@ -796,9 +790,9 @@ body {
   }
 
   .clothes-page__img {
-    margin-left: 3vw;
+    margin-left: 3%;
     margin-top: 14vh;
-    width: 50vw;
+    width: 50%;
   }
 
   .clothes-page__main-block {
@@ -816,7 +810,7 @@ body {
   }
 
   .clothes-page__other-offers {
-    width: 25vw;
+    width: 25%;
   }
 }
 
@@ -842,7 +836,7 @@ body {
   }
 
   .clothes-page__img {
-    margin-left: -45vw;
+    margin-left: -45%;
   }
 
   .clothes-page__other-offers {
@@ -856,7 +850,7 @@ body {
 
 @media (min-width: 1025px) {
   .clothes-page__img {
-      margin-left: -35vw;
+      margin-left: -35%;
   }
 }
 
@@ -951,7 +945,7 @@ body {
   }
 
   .clothes-page__img {
-    margin-left: -25vw;
+    margin-left: -400px;
     max-width: 646px;
   }
 
