@@ -831,6 +831,16 @@ body {
     display: none;
   }
 
+  .clothes-page__rectangle {
+    background-color: #000;
+    display: block;
+    float: left;
+    height: 900px;
+    margin-left: 388px;
+    width: 73px;
+    z-index: 1;
+  }
+
   .clothes-page__img {
     margin-left: -45vw;
   }
