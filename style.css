@@ -3,7 +3,7 @@ body {
   margin: 0;
 }
 
-@media (max-width: 415px) {
+@media (max-width: 449px) {
   /*ГЛАВНАЯ СТРАНИЦА*/
 
   .main-page {
@@ -282,7 +282,7 @@ body {
   }
 }
 
-@media (min-width: 416px) {
+@media (min-width: 450px) {
 
   .main-page__side-panel {
     background-color: #000;
@@ -395,6 +395,7 @@ body {
     font-size: 13px;
     font-weight: 500;
     margin-right: 1%;
+    max-width: 203px;
     text-transform: uppercase;
     width: 70%;
   }
@@ -731,7 +732,7 @@ body {
   }
 }
 
-@media (min-width: 416px) {
+@media (min-width: 450px) {
 
   .main-page__btn_read-more {
     margin-bottom: 20px;
@@ -856,10 +857,6 @@ body {
 
 @media (min-width: 1370px) {
 
-  .header {
-    min-width: 1440px;
-  }
-
   .header__title {
       font-size: 30px;
   }
@@ -903,6 +900,7 @@ body {
     padding-left: 137px;
     padding-top: 217px;
     position: absolute;
+    width: 100%;
   }
 
   .clutch-page__img_front {
@@ -910,6 +908,7 @@ body {
     padding-left: 231px;
     padding-top: 28px;
     position: relative;
+    width: 100%;
     z-index: 1;
   }
 
